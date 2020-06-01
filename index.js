@@ -18,6 +18,11 @@ jsdoc2md index.js > docs/api.md
  * @example
  * const traceLine = require('trace-line')
  */
+
+/**
+ * @alias module:traceLine
+ * @typicalname traceLine
+ */
 class TraceLine {
   /**
    * Returns a single item

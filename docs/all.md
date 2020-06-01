@@ -28,25 +28,25 @@ Output:
   {
     "method": "goC",
     "line": 5,
-    "file": "/home/mtzcpd262/Documents/git/trace-line/tests/sample-all.js",
+    "file": "/home/user/trace-line/tests/sample-all.js",
     "filename": "sample-all"
   },
   {
     "method": "goB",
     "line": 10,
-    "file": "/home/mtzcpd262/Documents/git/trace-line/tests/sample-all.js",
+    "file": "/home/user/trace-line/tests/sample-all.js",
     "filename": "sample-all"
   },
   {
     "method": "goA",
     "line": 15,
-    "file": "/home/mtzcpd262/Documents/git/trace-line/tests/sample-all.js",
+    "file": "/home/user/trace-line/tests/sample-all.js",
     "filename": "sample-all"
   },
   {
     "method": null,
     "line": 18,
-    "file": "/home/mtzcpd262/Documents/git/trace-line/tests/sample-all.js",
+    "file": "/home/user/trace-line/tests/sample-all.js",
     "filename": "sample-all"
   },
   {

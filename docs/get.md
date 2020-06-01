@@ -22,19 +22,19 @@ Output:
 {
   "method": null,
   "line": 4,
-  "file": "/home/mtzcpd262/Documents/git/trace-line/tests/sample.js",
+  "file": "/home/user/trace-line/tests/sample.js",
   "filename": "sample"
 }
 {
   "method": "funcB",
   "line": 8,
-  "file": "/home/mtzcpd262/Documents/git/trace-line/tests/sample.js",
+  "file": "/home/user/trace-line/tests/sample.js",
   "filename": "sample"
 }
 {
   "method": "funcA",
   "line": 11,
-  "file": "/home/mtzcpd262/Documents/git/trace-line/tests/sample.js",
+  "file": "/home/user/trace-line/tests/sample.js",
   "filename": "sample"
 }
 ```
