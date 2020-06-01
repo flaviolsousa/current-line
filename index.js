@@ -1,7 +1,7 @@
 /*
 # gen doc
 npm i jsdoc-to-markdown -g
-jsdoc2md index.js
+jsdoc2md index.js > docs/api.md
 */
 
 /**
@@ -14,14 +14,9 @@ jsdoc2md index.js
  */
 
 /**
- * @module trace-line
+ * @module traceLine
  * @example
  * const traceLine = require('trace-line')
- */
-
-/**
- * @alias module:trace-line
- * @typicalname traceLine
  */
 class TraceLine {
   /**
@@ -45,7 +40,7 @@ class TraceLine {
   all() {
     const stack = getStack();
     const result = [];
-    for (let i = 0; i < stack.length; i++) {
+    for (let i = 1; i < stack.length; i++) {
       const item = stack[i];
       result.push(parse(item));
     }
