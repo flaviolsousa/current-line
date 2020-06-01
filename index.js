@@ -1,3 +1,58 @@
+/*
+# gen doc
+npm i jsdoc-to-markdown -g
+jsdoc2md index.js
+*/
+
+/**
+ * @typedef StackItem
+ * @type {object}
+ * @property {string} method - Name of function on stack
+ * @property {number} line - Line number on stack
+ * @property {string} file - /PathOfFile/Source/NameOfFilename.js
+ * @property {string} filename - NameOfFile
+ */
+
+/**
+ * @module trace-line
+ * @example
+ * const traceLine = require('trace-line')
+ */
+
+/**
+ * @alias module:trace-line
+ * @typicalname traceLine
+ */
+class TraceLine {
+  /**
+   * Returns a single item
+   *
+   * @param {number} [level] Useful to return levels up on the stack. If not informed, the first (0, zero index) element of the stack will be returned
+   * @returns {StackItem}
+   */
+  get(level = 0) {
+    const stack = getStack();
+    const item = stack[level + 1];
+    const result = parse(item);
+    return result;
+  }
+
+  /**
+   * Returns all stack
+   *
+   * @returns {StackItem[]}
+   */
+  all() {
+    const stack = getStack();
+    const result = [];
+    for (let i = 0; i < stack.length; i++) {
+      const item = stack[i];
+      result.push(parse(item));
+    }
+    return result;
+  }
+}
+
 function getStack() {
   const orig = Error.prepareStackTrace;
   Error.prepareStackTrace = function (_, stack) {
@@ -20,26 +75,4 @@ function parse(item) {
   return result;
 }
 
-const traceLine = {
-  /**
-   * @param {number} level
-   */
-  get: function (level = 0) {
-    const stack = getStack();
-    const item = stack[level + 1];
-    const result = parse(item);
-    return result;
-  },
-
-  all: function () {
-    const stack = getStack();
-    const result = [];
-    for (let i = 0; i < stack.length; i++) {
-      const item = stack[i];
-      result.push(parse(item));
-    }
-    return result;
-  },
-};
-
-module.exports = traceLine;
+module.exports = new TraceLine();
