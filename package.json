@@ -1,6 +1,6 @@
 {
   "name": "current-line",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get current filename, function name and line number",
   "main": "index.js",
   "directories": {},
