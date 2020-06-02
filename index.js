@@ -32,7 +32,8 @@ class CurrentLine {
    */
   get(level = 0) {
     const stack = getStack();
-    const item = stack[level + 1];
+    const i = Math.min(level + 1, stack.length - 1);
+    const item = stack[i];
     const result = parse(item);
     return result;
   }

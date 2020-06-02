@@ -29,6 +29,16 @@ describe("index-test.js", function () {
     done();
   });
 
+  it("last-level", function getMethod(done) {
+    function subLevel(params) {
+      const result = currentLine.get(100);
+      assert.ok(result, "result: " + JSON.stringify(result));
+      assert.ok(result.line > 0, "result: " + JSON.stringify(result));
+    }
+    subLevel();
+    done();
+  });
+
   it("getAll", function getMethod(done) {
     const result = currentLine.all();
     // console.log(JSON.stringify(result, null, 2));
