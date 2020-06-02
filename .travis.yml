@@ -6,7 +6,6 @@ node_js:
   - stable
   - node
   - 8
-  - 6
 
 install:
   - npm install
