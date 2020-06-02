@@ -1,11 +1,11 @@
 ## tests/sample-all.js
 
 ```js
-const traceLine = require(".."); //require("trace-line")
+const currentLine = require(".."); //require("current-line")
 const log = (o) => console.log(JSON.stringify(o, null, 2));
 
 function goC(params) {
-  log(traceLine.all());
+  log(currentLine.all());
 }
 
 class ClassA {
@@ -28,25 +28,25 @@ Output:
   {
     "method": "goC",
     "line": 5,
-    "file": "/home/user/trace-line/tests/sample-all.js",
+    "file": "/home/user/current-line/tests/sample-all.js",
     "filename": "sample-all"
   },
   {
     "method": "goB",
     "line": 10,
-    "file": "/home/user/trace-line/tests/sample-all.js",
+    "file": "/home/user/current-line/tests/sample-all.js",
     "filename": "sample-all"
   },
   {
     "method": "goA",
     "line": 15,
-    "file": "/home/user/trace-line/tests/sample-all.js",
+    "file": "/home/user/current-line/tests/sample-all.js",
     "filename": "sample-all"
   },
   {
     "method": null,
     "line": 18,
-    "file": "/home/user/trace-line/tests/sample-all.js",
+    "file": "/home/user/current-line/tests/sample-all.js",
     "filename": "sample-all"
   },
   {

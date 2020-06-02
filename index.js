@@ -14,16 +14,16 @@ jsdoc2md index.js > docs/api.md
  */
 
 /**
- * @module traceLine
+ * @module currentLine
  * @example
- * const traceLine = require('trace-line')
+ * const currentLine = require('current-line')
  */
 
 /**
- * @alias module:traceLine
- * @typicalname traceLine
+ * @alias module:currentLine
+ * @typicalname currentLine
  */
-class TraceLine {
+class CurrentLine {
   /**
    * Returns a single item
    *
@@ -75,4 +75,4 @@ function parse(item) {
   return result;
 }
 
-module.exports = new TraceLine();
+module.exports = new CurrentLine();

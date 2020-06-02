@@ -1,5 +1,5 @@
 {
-  "name": "trace-line",
+  "name": "current-line",
   "version": "1.0.0",
   "description": "Get current filename, function name and line number",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flaviolsousa/trace-line.git"
+    "url": "git+https://github.com/flaviolsousa/current-line.git"
   },
   "keywords": [
     "stack",
@@ -31,9 +31,9 @@
   "author": "FlavioLSousa",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/flaviolsousa/trace-line/issues"
+    "url": "https://github.com/flaviolsousa/current-line/issues"
   },
-  "homepage": "https://github.com/flaviolsousa/trace-line#readme",
+  "homepage": "https://github.com/flaviolsousa/current-line#readme",
   "devDependencies": {
     "assert": "^2.0.0",
     "codecov": "^3.7.0",
